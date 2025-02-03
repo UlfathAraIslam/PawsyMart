@@ -12,10 +12,7 @@
       rel="stylesheet"
     />
     <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/6c7d2f9175.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Tailwind CDN -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- Tailwind Custom CSS -->
@@ -28,10 +25,36 @@
       }
     </style>
   </head>
-  <body class="font-adlam bg-light">
+  <body class="font-adlam">
     <header>
       <!-- Navbar -->
-      <nav></nav>
+      <nav class="bg-[#fff9f4]">
+        <div class="container mx-auto flex justify-between items-center p-6 font-sora text-gray-800">
+            <!-- logo -->
+        <div class="flex items-center gap-2">
+            <img src="./assets/logo-header.png" alt="">
+            <h5 class="text-2xl hidden sm:block">Paws<span class="text-primary">y</span>Mart</h5>
+        </div>
+        <!-- links -->
+         <ul class="text-xl md:flex gap-8 hidden">
+            <li><a href="">Find a pet</a></li>
+            <li><a href="">Breeds</a></li>
+            <li><a href="">Contact us</a></li>
+         </ul>
+         <!-- icons login register -->
+          <div class="text-xl space-x-4 hidden md:block">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="" class="btn border border-primary text-xl px-6 py-2 rounded-lg">Login</a>
+            <a href="" class="btn bg-yellow-300 px-6 py-2 rounded-lg">Register</a>
+          </div>
+          <!-- menu icon -->
+          <div class="block md:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <hr class=" block md:hidden">
       <!-- Banner -->
     </header>
     <main>
