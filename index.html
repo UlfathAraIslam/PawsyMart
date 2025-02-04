@@ -21,14 +21,15 @@
         --font-adlam: ADLam Display, serif;
         --font-sora: Sora, serif;
         --color-primary: #f9df8a;
-        --background-yellow: #fff9f4;
+        --background-light: #fff9f4;
+        --background-yellow: #F9DF8A;
       }
     </style>
   </head>
   <body class="font-adlam">
     <header>
       <!-- Navbar -->
-      <nav class="bg-[#fff9f4] mb-20 sticky top-0">
+      <nav class="bg-[#fff9f4] mb-0 md:mb-20 sticky top-0">
         <div class="container mx-auto flex justify-between items-center p-6 font-sora text-gray-800">
             <!-- logo -->
         <div class="flex items-center gap-2">
@@ -56,18 +57,18 @@
       </nav>
       <hr class=" block md:hidden">
       <!-- Banner -->
-      <section class="w-11/12 mx-auto bg-[url('./assets/cat-big.png')] bg-contain bg-no-repeat bg-center p-6 min-h-screen">
-        <div class="space-y-4">
-            <h3 class="font-adlam text-6xl">Pamper Your Pet, <br>Because They Deserve <br> the Bes</h3>
-            <p class="font-sora text-xl text-gray-600">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
-            <a href="" class="btn bg-yellow-300 px-6 py-2 rounded-lg font-sora">Find a pet</a>
-        </div>
+      <section class="container mx-auto bg-[url('./assets/cat-big.png')] bg-contain bg-no-repeat bg-center p-6 min-h-screen">
+            <div class="space-y-4">
+                <h3 class="font-adlam text-6xl">Pamper Your Pet, <br>Because They Deserve <br> the Bes</h3>
+                <p class="font-sora text-xl text-gray-600">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+                <a href="" class="btn bg-yellow-300 px-6 py-2 rounded-lg font-sora">Find a pet</a>
+            </div>
     </section>
 
     </header>
     <main>
         <!-- Browse By Categories -->
-        <section class="w-11/12 mx-auto mb-20 space-y-4">
+        <section class="container mx-auto p-6 mb-20 space-y-4">
             <h4 class="font-adlam text-4xl">Browse By Categories</h4>
             <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
                 <div class="bg-[#f9df8a] p-9 flex justify-center items-center flex-col rounded-xl">
@@ -103,6 +104,126 @@
             </div>
         </section>
         <!-- Trending Pet Products -->
+        <section class="mb-20 md:bg-[#fff9f4] bg-transparent">
+            <div class="container mx-auto px-6 py-32">
+              <h4 class="font-adlam text-4xl mb-8">Trending Pet Products</h4>
+              <!-- flex box -->
+            <div class="flex flex-col md:flex-row gap-4">
+              <!-- left card -->
+               <!-- ToDo: have to remove fixed height -->
+                <div class="relative h-[402px] bg-[#F9DF8A] bg-contain bg-right-bottom bg-no-repeat space-y-4 px-8 py-12 rounded-lg">
+                  <h4 class="font-adlam text-2xl">T-
+                    Shirt For Dogs </h4>
+                    <p class="font-sora text-gray-600">Discover a world of treats, toys, and <br> essentials handpicked for</p>
+                    <a href="" class="btn bg-white px-6 py-2 rounded-lg font-sora text-gray-800">Shop Now</a>
+                    <img class="absolute bottom-0 right-2" src="./assets/cute-pet-small.png" alt="">
+                </div> 
+                <!-- right grid container -->
+                  <div class="grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-4 gap-4 font-sora flex-1">
+                    <!-- grid-card-1 -->
+                    <div class="flex gap-1 md:gap-4 bg-white p-4 overflow-hidden border border-gray-200 rounded-lg space-x-1 md:space-x-4">
+                        <img class="object-contain bg-[#fff9f4] rounded-lg p-4" src="./assets/pet-couch.png" alt="">
+                      <div class="flex-1">
+                        <div class="flex gap-2">
+                          <i class="fa-solid fa-star text-yellow-500"></i>
+                          <p>4.5</p>
+                        </div>
+                        <p>Pet Bed</p>
+                        <p>$20.99</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-1 md:gap-4 bg-white p-4 overflow-hidden border border-gray-200 rounded-lg space-x-1 md:space-x-4">
+                        <img class="bg-[#fff9f4] rounded-lg p-4" src="./assets/pet-couch.png" alt="">
+                      <div class="flex-1">
+                        <div class="flex gap-2">
+                          <i class="fa-solid fa-star text-yellow-500"></i>
+                          <p>4.5</p>
+                        </div>
+                        <p>Pet Bed</p>
+                        <p>$20.99</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-1 md:gap-4 bg-white p-4 overflow-hidden border border-gray-200 rounded-lg space-x-1 md:space-x-4">
+                        <img class="bg-[#fff9f4] rounded-lg p-4" src="./assets/pet-couch.png" alt="">
+                      <div class="flex-1">
+                        <div class="flex gap-2">
+                          <i class="fa-solid fa-star text-yellow-500"></i>
+                          <p>4.5</p>
+                        </div>
+                        <p>Pet Bed</p>
+                        <p>$20.99</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-1 md:gap-4 bg-white p-4 overflow-hidden border border-gray-200 rounded-lg space-x-1 md:space-x-4">
+                        <img class="bg-[#fff9f4] rounded-lg p-4" src="./assets/pet-couch.png" alt="">
+                      <div class="flex-1">
+                        <div class="flex gap-2">
+                          <i class="fa-solid fa-star text-yellow-500"></i>
+                          <p>4.5</p>
+                        </div>
+                        <p>Pet Bed</p>
+                        <p>$20.99</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-1 md:gap-4 bg-white p-4 overflow-hidden border border-gray-200 rounded-lg space-x-1 md:space-x-4">
+                        <img class="bg-[#fff9f4] rounded-lg p-4" src="./assets/pet-couch.png" alt="">
+                      <div class="flex-1">
+                        <div class="flex gap-2">
+                          <i class="fa-solid fa-star text-yellow-500"></i>
+                          <p>4.5</p>
+                        </div>
+                        <p>Pet Bed</p>
+                        <p>$20.99</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-1 md:gap-4 bg-white p-4 overflow-hidden border border-gray-200 rounded-lg space-x-1 md:space-x-4">
+                        <img class="bg-[#fff9f4] rounded-lg p-4" src="./assets/pet-couch.png" alt="">
+                      <div class="flex-1">
+                        <div class="flex gap-2">
+                          <i class="fa-solid fa-star text-yellow-500"></i>
+                          <p>4.5</p>
+                        </div>
+                        <p>Pet Bed</p>
+                        <p>$20.99</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-1 md:gap-4 bg-white p-4 overflow-hidden border border-gray-200 rounded-lg space-x-1 md:space-x-4">
+                        <img class="bg-[#fff9f4] rounded-lg p-4" src="./assets/pet-couch.png" alt="">
+                      <div class="flex-1">
+                        <div class="flex gap-2">
+                          <i class="fa-solid fa-star text-yellow-500"></i>
+                          <p>4.5</p>
+                        </div>
+                        <p>Pet Bed</p>
+                        <p>$20.99</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-1 md:gap-4 bg-white p-4 overflow-hidden border border-gray-200 rounded-lg space-x-1 md:space-x-4">
+                        <img class="bg-[#fff9f4] rounded-lg p-4" src="./assets/pet-couch.png" alt="">
+                      <div class="flex-1">
+                        <div class="flex gap-2">
+                          <i class="fa-solid fa-star text-yellow-500"></i>
+                          <p>4.5</p>
+                        </div>
+                        <p>Pet Bed</p>
+                        <p>$20.99</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-1 md:gap-4 bg-white p-4 overflow-hidden border border-gray-200 rounded-lg space-x-1 md:space-x-4">
+                        <img class="bg-[#fff9f4] rounded-lg p-4" src="./assets/pet-couch.png" alt="">
+                      <div class="flex-1">
+                        <div class="flex gap-2">
+                          <i class="fa-solid fa-star text-yellow-500"></i>
+                          <p>4.5</p>
+                        </div>
+                        <p>Pet Bed</p>
+                        <p>$20.99</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            </div>
+        </section>
         
         <!-- Everyday low Price -->
          <section></section>
